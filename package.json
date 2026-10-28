@@ -19,6 +19,7 @@
     "dev": "vite",
     "dev:probe": "vite --open /dev-probe.html",
     "build": "npm run build:vercel-api && vite build",
+    "build:capacitor": "cross-env FOLIA_BUILD_TARGET=capacitor vite build",
     "build:vercel-api": "tsc -p api-ts/tsconfig.json",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
@@ -223,6 +224,9 @@
   },
   "devDependencies": {
     "@applemusic-like-lyrics/ttml": "^1.0.1",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/ios": "^8.5.3",
     "@chenglou/pretext": "^0.0.9",
     "@emnapi/core": "1.11.3",
     "@emnapi/runtime": "1.11.3",
