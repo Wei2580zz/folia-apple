@@ -6,7 +6,8 @@ on:
 
 jobs:
   build:
-    runs-on: macos-14
+    runs-on: macOS-13
+
     timeout-minutes: 60
 
     steps:
